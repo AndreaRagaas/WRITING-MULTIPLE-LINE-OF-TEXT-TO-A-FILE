@@ -6,5 +6,16 @@ while True:
         line = input('Enter line: ')
         if line:
             my_file.write(line + '\n')
+
+#ask the user if still wanted to add another line or not
+        while True:
+                choice = input('Are there more lines (y/n): ')
+                if choice == 'y':
+                    line = input('Enter line: ')
+                    if line:
+                        my_file.write(line + '\n')
+                elif choice == 'n':
+                    exit()
+
         else:
-              break
+            break
