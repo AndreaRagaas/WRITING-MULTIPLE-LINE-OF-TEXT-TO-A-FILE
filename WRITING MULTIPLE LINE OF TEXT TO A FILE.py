@@ -19,3 +19,6 @@ while True:
 
         else:
             break
+
+#close the file
+my_file.close()
